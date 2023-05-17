@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initialscale=1,maximum-scale=1"
+    />
+    <meta content="Nombre del Autor" name="author" />
+    <meta
+      content="Descripcion de los productos o servicios que ofree sus empresa
+o negocio"
+      name="description"
+    />
+    <meta
+      content="Palabras, clave, de los, productos o servicios, que ofrece, tu
+empresa o negocio, separado por comas"
+      name="keywords"
+    />
+
+    <title>Pasteleria la Cereza</title>
+    <link rel="stylesheet" href="./css/stilo.css" />
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/css/fontello-embedded.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="letra">PASTELERIA LA CEREZA</h1>
+      <h2 class="letra">Su pastelería de confianza</h2>
+    </header>
+    <img src="./asset/cereza1.jpg" class="logo" />
+    <nav class="navegacion">
+      <ul class="menu">
+        <li><a href="pasteleria.html">Inicio</a></li>
+        <li><a href="qsomos.html">Quienes Somos</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="submenu">
+            <li><a href="pasteleria.html#diseno">Diseños</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="promocional.html">Promocional</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section id="contacto" class="contacto">
+            <h2 class="titulo-contacto">solicite su pastel</h2>
+            <div class="contacto-container">
+              <img src="./asset/pastelera.jpg" alt="Imagen de contacto">
+              <form action="/enviar" method="POST">
+                <label for="nombre">Escriba su nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                <br />
+        
+                <label for="email">Escriba su correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+                <br />
+        
+                <label>Marcar el tipo de evento:</label>
+                <br />
+                <input type="radio" name="evento1" value="Bautizo" />
+                <label for="pastel1">Bautizo</label>
+                <br />
+                <input type="radio" name="evento2" value="Boda" />
+                <label for="pastel2">Boda</label>
+                <br />
+                <input type="radio" name="evento3" value="Cumpleaños" />
+                <label for="pastel3">Cumpleaños</label>
+                <br />
+                <input type="radio" name="evento4" value="infantil" />
+                <label for="pastel4">Infantil</label>
+                <br />
+                <input type="radio" name="evento5" value="Otro evento" />
+                <label for="pastel5">Otro evento</label>
+                <br /
+                <label for="fecha">Indique la fecha y hora del evento:</label>
+                <br />
+                <input type="datetime-local" id="fechaHora" name="fechaHora" required />
+                <br />
+        
+                <label for="color">Seleccione el color de su pastel:</label>
+                <br />
+                <input type="color" id="color" name="color" required />
+                <br />
+        
+                <label for="mensaje">Describa las características de su pastel:</label>
+                <br />
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <br />
+        
+                <label for="imagen"
+                  >Adjunte la imagen para imprimir en el pastel:</label
+                >
+                <br />
+                <input
+                  type="file"
+                  id="imagen"
+                  name="imagen"
+                  accept="image/*"
+                  required
+                />
+                <br />
+                <br />
+        
+                <input type="submit" value="Enviar" />
+              </form>
+            </div>
+          </section>          
+  </body>
+</html>
